@@ -1,0 +1,56 @@
+[
+  {
+    "folder": "SeedheMaut",
+    "title": "SeedheMaut Mix",
+    "description": "Best of SeedheMaut",
+    "cover": "cover.jpg",
+    "songs": [
+      "Hola Amigo.mp3",
+      "Khatta Flow.mp3",
+      "Namastute.mp3",
+      "Red.mp3",
+      "Shutdown.mp3",
+      "Tt.mp3",
+      "11k.mp3",
+      "Champions.mp3",
+      "Luka Chippi.mp3",
+      "Shaayar.mp3"
+    ]
+  },
+  {
+    "folder": "Karan Aujla",
+    "title": "Karan Aujla Mix",
+    "description": "Best of Karan Aujla",
+    "cover": "cover.jpg",
+    "songs": [
+      "Admirin You - Karan Aujla.mp3",
+      "Courtside.mp3",
+      "On Top - Karan Aujla.mp3",
+      "Players - Badshah.mp3",
+      "Wavy.mp3",
+      "White Brown Black - Avvy Sra.mp3",
+      "Boyfriend.mp3",
+      "For a Reason.mp3",
+      "Youre U Tho.mp3"
+    ]
+  },
+  {
+    "folder": "Moodiess",
+    "title": "Moodiess",
+    "description": "various artists",
+    "cover": "cover.jpg",
+    "songs": [
+      "Aarzu.mp3",
+      "Afsos.mp3",
+      "Arz Kiya Hai _ Coke Studio Bharat.mp3",
+      "Bairan.mp3",
+      "Barsaat.mp3",
+      "Heeriye (feat. Arijit Singh).mp3",
+      "Husn.mp3",
+      "Jo Tum Mere Ho.mp3",
+      "Khat.mp3",
+      "Sanu_Nehar_Waley_Pul_Te_Bulake.mp3"
+    ]
+  }
+
+]
