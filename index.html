@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Spotify Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- ================= LEFT SIDEBAR ================= -->
+
+        <aside class="sidebar left">
+
+            <!-- Mobile Close -->
+            <div class="close">
+                <img src="img/close.svg" class="invert" width="28">
+            </div>
+
+            <!-- Spotify Logo -->
+            <div class="sidebarLogo">
+                <img src="img/logo.svg" class="invert" alt="">
+            </div>
+
+            <!-- Library Header -->
+            <div class="library">
+
+                <div class="libraryHeader">
+
+                    <div class="libraryTitle">
+                        <img src="img/playlist.svg" class="invert">
+                        <span>Your Library</span>
+                    </div>
+
+                    <button class="createBtn">
+                        +
+                        <span>Create</span>
+                    </button>
+
+                </div>
+
+                <!-- Filter Chips -->
+                <div class="libraryFilters">
+
+                    <button class="chip active">
+                        Playlists
+                    </button>
+
+                    <button class="chip">
+                        Artists
+                    </button>
+
+                </div>
+
+                <!-- Search + Recents -->
+
+                <div class="librarySearch">
+
+                    <img src="img/search.svg" class="invert">
+
+                    <div class="recents">
+                        Recents
+                    </div>
+
+                </div>
+
+                <!-- Song List (Injected by JS) -->
+
+                <div class="songList">
+
+                    <ul>
+
+                    </ul>
+
+                </div>
+
+                <!-- Footer -->
+
+                <div class="footer">
+
+                    <a href="">Legal</a>
+                    <a href="">Safety & Privacy Center</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Cookies</a>
+                    <a href="">About Ads</a>
+                    <a href="">Accessibility</a>
+
+                    <button class="languageBtn">
+                        🌐 English
+                    </button>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+        <!-- ================= MAIN SECTION ================= -->
+
+        <main class="mainView right">
+
+            <!-- ============ TOP NAVBAR ============ -->
+
+            <header class="header">
+
+                <div class="navLeft">
+
+                    <img src="img/hamburger.svg" class="invert hamburger">
+
+                    <button class="circleBtn">
+                        <svg viewBox="0 0 24 24" width="18" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <button class="circleBtn">
+                        <svg viewBox="0 0 24 24" width="18" fill="none">
+                            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                </div>
+
+                <!-- SEARCH BAR -->
+
+                <div class="searchBar">
+
+                    <div class="homeBtn">
+
+                        <img src="img/home.svg" class="invert">
+
+                    </div>
+
+                    <div class="searchInput">
+
+                        <img src="img/search.svg" class="invert searchIcon">
+
+                        <input type="text" placeholder="What do you want to play?">
+
+                        <div class="divider"></div>
+
+                        <img src="img/playlist.svg" class="invert libraryIcon">
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT BUTTONS -->
+
+                <div class="topNavButtons">
+
+                    <button class="topNavBtn">Premium</button>
+
+                    <button class="topNavBtn">Support</button>
+
+                    <button class="topNavBtn">Download</button>
+
+                    <div class="navDivider"></div>
+
+                    <button class="installBtn">
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path
+                                d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528-.005-.005-2.472-2.473a.75.75 0 0 1 0-1.06" />
+                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13" />
+                        </svg>
+
+                        <span>Install App</span>
+                    </button>
+
+                    <button class="signupBtn">Sign up</button>
+
+                    <button class="loginBtn">Log in</button>
+
+                </div>
+
+            </header>
+
+            <!-- ============ HERO / FILTERS ============ -->
+
+            <section class="hero">
+
+                <div class="heroGradient"></div>
+
+                <div class="heroContent">
+
+                    <div class="heroChips">
+
+                        <button class="chip active">
+                            All
+                        </button>
+
+                        <button class="chip">
+                            Music
+                        </button>
+
+                        <button class="chip">
+                            Podcasts
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ============ PLAYLIST SECTION ============ -->
+
+            <section class="spotifyPlaylists">
+
+                <div class="sectionHeading">
+
+                    <h1>Editor's Picks: No-Skip Playlists</h1>
+
+                    <a href="">Show all</a>
+
+                </div>
+
+                <!-- JS Injects Cards Here -->
+
+                <div class="cardContainer">
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- ============ PLAYER ============ -->
+
+    <footer class="playbar">
+
+        <div class="playerLeft">
+
+            <div class="songCover">
+
+                <img src="img/music.svg" class="invert" id="albumArt">
+
+            </div>
+
+            <div class="songMeta">
+
+                <div class="songinfo">
+
+                </div>
+
+                <div class="artistName">
+                    Rishabh Dubey
+                </div>
+
+            </div>
+
+            <button class="likeBtn">
+                +
+            </button>
+
+        </div>
+
+        <!-- CENTER CONTROLS -->
+
+        <div class="playerCenter">
+
+            <div class="songbuttons">
+
+                <img src="img/prevsong.svg" id="previous">
+
+                <img src="img/play.svg" id="play">
+
+                <img src="img/nextsong.svg" id="next">
+
+            </div>
+
+            <div class="progressArea">
+
+                <span class="current"></span>
+
+                <div class="seekbar">
+
+                    <div class="circle"></div>
+
+                </div>
+
+                <span class="songtime">0:00</span>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT CONTROLS -->
+
+        <div class="playerRight">
+
+            <img src="img/lyrics.svg" alt="Lyrics" class="playerIcon">
+
+            <img src="img/queue.svg" alt="Queue" class="playerIcon">
+
+            <img src="img/device.svg" alt="Device" class="playerIcon">
+
+
+            <div class="volume">
+
+                <img src="img/volume.svg" class="invert">
+
+                <div class="range">
+
+                    <input type="range" min="0" max="100" value="100">
+
+                </div>
+
+            </div>
+
+            <img src="img/fullscreen.svg" alt="Fullscreen" class="playerIcon">
+
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

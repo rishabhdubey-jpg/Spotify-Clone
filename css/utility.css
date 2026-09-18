@@ -1,0 +1,260 @@
+/* ==========================================
+   SPOTIFY WEB PLAYER CLONE - utility.css
+   Compatible with index.html + style.css
+   ========================================== */
+
+/* -------- Layout Utilities -------- */
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.gap-1 {
+    gap: 8px;
+}
+
+.gap-2 {
+    gap: 16px;
+}
+
+.gap-3 {
+    gap: 24px;
+}
+
+/* -------- Width & Height -------- */
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+/* -------- Background Utilities -------- */
+
+.bg-black {
+    background: #000;
+    color: #fff;
+}
+
+.bg-grey {
+    background: #121212;
+}
+
+.bg-card {
+    background: #181818;
+}
+
+.bg-hover {
+    background: #282828;
+}
+
+/* -------- Border Radius -------- */
+
+.rounded {
+    border-radius: 12px;
+}
+
+.rounded-sm {
+    border-radius: 8px;
+}
+
+.rounded-lg {
+    border-radius: 16px;
+}
+
+.rounded-full {
+    border-radius: 999px;
+}
+
+/* -------- Padding Utilities -------- */
+
+.p-1 {
+    padding: 8px;
+}
+
+.p-2 {
+    padding: 16px;
+}
+
+.p-3 {
+    padding: 24px;
+}
+
+/* -------- Margin Utilities -------- */
+
+.m-1 {
+    margin: 8px;
+}
+
+.m-2 {
+    margin: 16px;
+}
+
+.mt-1 {
+    margin-top: 8px;
+}
+
+.mt-2 {
+    margin-top: 16px;
+}
+
+.mt-3 {
+    margin-top: 24px;
+}
+
+/* -------- Typography -------- */
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-grey {
+    color: #b3b3b3;
+}
+
+.text-small {
+    font-size: 13px;
+}
+
+.text-xs {
+    font-size: 11px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+/* -------- Cursor -------- */
+
+.pointer {
+    cursor: pointer;
+}
+
+/* -------- Image Utilities -------- */
+
+.invert {
+    filter: brightness(0) invert(1);
+}
+
+.cover {
+    object-fit: cover;
+}
+
+.contain {
+    object-fit: contain;
+}
+
+/* -------- Hover Helpers -------- */
+
+.hover-bg:hover {
+    background: #282828;
+    transition: 0.2s ease;
+}
+
+.hover-white:hover {
+    color: white;
+    transition: 0.2s ease;
+}
+
+.scale:hover {
+    transform: scale(1.04);
+    transition: 0.2s ease;
+}
+
+/* -------- Hide Utilities -------- */
+
+.hidden {
+    display: none;
+}
+
+/* -------- Spotify Scrollbar -------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5a5a5a;
+    border-radius: 999px;
+    border: 2px solid #121212;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7a7a7a;
+}
+
+/* Firefox */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #5a5a5a #121212;
+}
+
+/* -------- Text Selection -------- */
+
+::selection {
+    background: #1ed760;
+    color: black;
+}
+
+/* -------- Smooth Scrolling -------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------- Responsive Helpers -------- */
+
+@media (max-width: 768px) {
+
+    .hide-mobile {
+        display: none !important;
+    }
+
+    .flex-mobile-column {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    .hide-desktop {
+        display: none !important;
+    }
+
+}
